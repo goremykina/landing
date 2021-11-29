@@ -762,6 +762,10 @@ body * {
     margin-left: 20px;
 }
 
+.arrows_mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 1440px) {
     .header .header-navigation__item, .header .button {
         display: none;
