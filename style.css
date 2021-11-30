@@ -25,6 +25,10 @@ body * {
     font-style: italic;
 }
 
+.button:hover, .button_submit:hover, .button_call:hover{
+    background: #b5935c;
+}
+
 .logo {
     color: #E3B873;
 }
@@ -97,6 +101,15 @@ body * {
     box-sizing: border-box;
     border-radius: 2px;
     background: none;
+}
+
+.button.outline:hover {
+    background: white;
+    color: #000;
+}
+
+button {
+    transition: background-color 300ms ease-out, color 300ms ease-out;
 }
 
 .paragraph {
@@ -258,7 +271,7 @@ body * {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(calc(-50% + 0.5px), calc(-50% + 0.5px))
 }
 
 .p-relative {
@@ -332,6 +345,7 @@ body * {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    border: none;
 }
 
 .form_blok {
@@ -448,9 +462,11 @@ body * {
 
 .all_steps {
     border-radius: 100%;
-    background: #FFFFFF;
-    padding: 10px;
     display: inline-flex;
+    opacity: 0.9;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgb(227 184 115 / 15%);
+    margin: 10px ;
 }
 
 .steps {
@@ -518,6 +534,8 @@ body * {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 39px;
+    border: none;
+    margin-bottom: 34.4px;
 }
 
 .button_d {
@@ -903,6 +921,7 @@ body * {
         width: 100%;
         position: absolute;
         bottom: -30px;
+        border: none;
     }
 
     .clock_mobile {
@@ -955,6 +974,10 @@ body * {
 
     .blok_request_down, .width_mobile, .button_call {
         width: 100%;
+    }
+
+    .button_call {
+        border: none;
     }
 
     .dark_field_down {
@@ -1038,6 +1061,10 @@ body * {
 
     .arrows_mobile.clock {
         top: 70%;
+    }
+
+    .button:hover, .button_submit:hover, .button_call:hover{
+        background: #b5935c;
     }
 
 }
