@@ -36,12 +36,13 @@ body * {
 .header {
     background-color: black;
     font-family: Nunito Sans;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
-    height: 83px;
     align-items: center;
 }
 
@@ -126,6 +127,7 @@ button {
 
 .number {
    color: #E3B873;
+   margin-right: 20px;
 }
 
 .stage_progect {
@@ -785,15 +787,12 @@ button {
 }
 
 @media only screen and (max-width: 1440px) {
-    .header .header-navigation__item, .header .button {
-        display: none;
-    }
     .container {
         padding: 0;
     }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 800px) {
    .two_buttons {
        display: flex;
        flex-direction: column;
@@ -804,14 +803,33 @@ button {
    }
    .progect_description, .whole_block {
        width: 100%;
-   }
+    }
+   
+    .header .header-navigation__item, .header .button {
+        display: none; 
+    }
+
+    .header.footer {
+        display: none;
+    }
 
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1300px) {
     .image_header__list,.switch_by_arrows, .blok_header_image, .blok_four_images, .options_list_information, .container.clients_review {
         display: none;
     }
+
+    .header {
+        padding: 0;
+    }
+
+    .header-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .mobile_room {
         display: block;
     }
@@ -1032,10 +1050,6 @@ button {
 
     .mr_gmail {
         margin-bottom: 0;
-    }
-
-    .header.footer {
-        display: none;
     }
 
     .project_columns {
