@@ -197,6 +197,15 @@ button {
     margin-right: 17.54px;
 }
 
+.button_slider_arrows {
+    border: none;
+    background: none;
+}
+
+.button_slider_arrows:hover {
+    cursor: pointer;
+}
+
 .left_arrow {
     margin-right: 29.5px;
 }
@@ -205,7 +214,7 @@ button {
     margin-left: 11.96px;
 }
 
-.header-navigation__item.image_header a{
+.header-navigation__item.image_header button{
     font-family: Yeseva One;
     font-size: 14px;
     line-height: 19px;
@@ -213,7 +222,7 @@ button {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.header-navigation__item.image_header:hover a {
+.header-navigation__item.image_header.active button, .header-navigation__item.image_header:hover button {
     color: #E3B873;
     text-decoration: underline;
     text-underline-offset: 10px;

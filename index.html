@@ -65,36 +65,52 @@
                     <div class="project_columns">
                         <div>
                             <h3 class="project">City</h3>
-                            <p class="information" >Rostov-on-Don <br> LCD admiral</p>
+                            <p class="information">Rostov-on-Don <br> LCD admiral</p>
                         </div>
                         <div>
                             <h3 class="project">apartment area:</h3>
-                            <p class="information" >81 m2</p>
+                            <p class="information">81 m2</p>
                         </div>
                         <div>
                             <h3 class="project">Repair time</h3>
-                            <p class="information" >3.5 months</p>
+                            <p class="information">3.5 months</p>
                         </div>
                         <div>
                             <h3 class="project">Repair Cost:</h3>
-                            <p class="information" >Upon request</p>
+                            <p class="information">Upon request</p>
                     </div>
                     </div>
                     <div class="switch_by_arrows">
-                        <img class="left_arrow" src="./icon/left arrow.svg" alt="Left arrow">
-                        <img class="point" src="./icon/white point.svg" alt="white point">
-                        <img class="point" src="./icon/gray point.svg" alt="gray point">
-                        <img class="point" src="./icon/gray point_2.svg" alt="gray point_2">
-                        <img class="right_arrow" src="./icon/right arrow.svg" alt="right arrow">
+                        <button onclick="goPrevious()" class="button_slider_arrows">
+                            <img class="left_arrow" src="./icon/left arrow.svg" alt="Left arrow">
+                        </button>
+                            <button class="button_slider_arrows" onclick="goToSlide(0)">
+                                <img class="point" src="./icon/white_point.svg" alt="white_point">
+                            </button>
+                            <button class="button_slider_arrows" onclick="goToSlide(1)">
+                                <img class="point" src="./icon/white_point.svg" alt="white_point">
+                            </button>
+                            <button class="button_slider_arrows" onclick="goToSlide(2)">
+                                <img class="point" src="./icon/white_point.svg" alt="white_point">
+                            </button>
+                        <button  onclick="goNext()" class="button_slider_arrows">
+                            <img class="right_arrow" src="./icon/right arrow.svg" alt="right arrow">
+                        </button>
                     </div>
                 </div>
                   <div class="blok_header_image">
                     <ul class="image_header__list">
-                        <li class="header-navigation__item image_header" ><a href="#">Rostov-on-Don, Admiral</a> </li>
-                        <li class="header-navigation__item image_header" ><a href="#">Sochi Thieves</a> </li>
-                        <li class="header-navigation__item image_header" ><a href="#">Rostov-on-Don Patriotic</a> </li>
+                        <li class="header-navigation__item image_header">
+                            <button class="button_slider_arrows" onclick="goToSlide(0)">Rostov-on-Don, Admiral</button> 
+                        </li>
+                        <li class="header-navigation__item image_header">
+                            <button class="button_slider_arrows" onclick="goToSlide(1)">Sochi Thieves </button> 
+                        </li>
+                        <li class="header-navigation__item image_header">
+                            <button class="button_slider_arrows" onclick="goToSlide(2)">Rostov-on-Don Patriotic </button>
+                        </li>
                     </ul>
-                    <img src="./Image/image 2.1.png" alt="image">
+                    <img id="slider_image" src="./Image/slider_1.png" alt="image">
                   </div>
                </div>
                </div>
@@ -452,5 +468,6 @@
          </div>
     </header> 
    </main>
+   <script src="index.js"></script>
 </body>
 </html>
